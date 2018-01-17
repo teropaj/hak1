@@ -1,0 +1,71 @@
+h1  {
+    text-align: center;
+}
+h1,h2{margin: 1em;}
+body{
+  margin-left: 20%;
+  background: white url("kuva.jpg") no-repeat top 10% right 10%;
+  background-size:20%;
+  background-color: lightblue;
+
+}
+.navbar{
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.navbar a{
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 6% 4%;
+
+}
+
+
+.workExperience{
+
+}
+
+.border{
+
+  border: 5px dotted orange;
+  margin: 10em;
+  padding: 2em;
+
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    p{color:#FF0000;}
+}
+.container{width: 100%;
+background-color: #ddd;}
+
+.skills{
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+.webdesign{
+  width: 50%;
+  background-color: #15ade3;
+}
+
+.html{width: 90%;
+background-color: #15bde3;
+}
+.javascript{width: 90%;
+
+background-color: #10bde3;
+}
+.linux{width: 60%;
+background-color: #15bde3;
+}
