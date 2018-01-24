@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leap year checker</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+	<form>
+		Give a date and I will check if the year is a leap year.</br>
+		<input type="date" id = "date">
+		<input type="submit" onclick ="checkLeapYear()">
+	</form>
+
+	<!--Returns "Yes, (year) is leap year." or "No, (year) is not a leap year."-->
+	<div id="result">is leapyear?</div>
+
+</body>
+<script>
+
+	function checkLeapYear(){
+		var date = document.getElementById("date");
+		var year = getYearFromDate(date); //First we need to parse year from the given date.
+		console.log("Year is "+year);
+		var jakojaannos=year%4;
+		if(jakojaannos==0){console.log("It is a leapyear "+jakojaannos);
+		document.getElementById("result").innerHTML ="It is a leapyear";
+	}
+		else {document.getElementById("result").innerHTML ="It is not a leapyear";}
+		//TODO: Your code here.
+
+		/*if(leapyear === true){}
+			else{}
+			document.getElementById("result").innerHTML = ;
+		*/
+	}
+
+
+/*We do not need to know how exactly this function works at the moment.
+	All we need to know is that this function returns the year from the date that
+	we give it.
+*/
+	function getYearFromDate(date){
+		var d = new Date(date.value);
+		var year = d.getFullYear();
+		console.log("Year is "+year);
+		return year;
+	}
+
+</script>
+</html>
